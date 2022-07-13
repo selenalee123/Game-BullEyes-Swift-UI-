@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F411ACB287CB91100B82292 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F411ACA287CB91100B82292 /* Game.swift */; };
 		3FAC2E7E286B438E00DFF069 /* BulleyesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC2E7D286B438E00DFF069 /* BulleyesApp.swift */; };
 		3FAC2E80286B438E00DFF069 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC2E7F286B438E00DFF069 /* ContentView.swift */; };
 		3FAC2E82286B439100DFF069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC2E81286B439100DFF069 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F411ACA287CB91100B82292 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		3FAC2E7A286B438E00DFF069 /* Bulleyes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bulleyes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAC2E7D286B438E00DFF069 /* BulleyesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulleyesApp.swift; sourceTree = "<group>"; };
 		3FAC2E7F286B438E00DFF069 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F411AC7287CB3A700B82292 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F411ACA287CB91100B82292 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3F411AC8287CB3D400B82292 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC2E7D286B438E00DFF069 /* BulleyesApp.swift */,
+				3FAC2E81286B439100DFF069 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3F411AC9287CB3DB00B82292 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC2E7F286B438E00DFF069 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3FAC2E71286B438E00DFF069 = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +121,9 @@
 		3FAC2E7C286B438E00DFF069 /* Bulleyes */ = {
 			isa = PBXGroup;
 			children = (
-				3FAC2E7D286B438E00DFF069 /* BulleyesApp.swift */,
-				3FAC2E7F286B438E00DFF069 /* ContentView.swift */,
-				3FAC2E81286B439100DFF069 /* Assets.xcassets */,
+				3F411AC9287CB3DB00B82292 /* Views */,
+				3F411AC8287CB3D400B82292 /* App */,
+				3F411AC7287CB3A700B82292 /* Models */,
 				3FAC2E83286B439100DFF069 /* Preview Content */,
 			);
 			path = Bulleyes;
@@ -258,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FAC2E80286B438E00DFF069 /* ContentView.swift in Sources */,
+				3F411ACB287CB91100B82292 /* Game.swift in Sources */,
 				3FAC2E7E286B438E00DFF069 /* BulleyesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,10 +447,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bulleyes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "Portrait\\ (bottom\\ home\\ button)\\  UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,10 +476,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bulleyes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "Portrait\\ (bottom\\ home\\ button)\\  UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
