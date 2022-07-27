@@ -60,6 +60,8 @@
 		3FCF8F3A288B082600B2FF2E /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		3FCF8F3C288B42EE00B2FF2E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3FCF8F3E288EE94A00B2FF2E /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		3FDFAF7F2891B9630011F58C /* Simulator Screen Recording - iPhone 11 Pro - 2022-07-27 at 14.18.52.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Simulator Screen Recording - iPhone 11 Pro - 2022-07-27 at 14.18.52.mp4"; sourceTree = "<group>"; };
+		3FDFAF802891B9630011F58C /* Simulator Screen Recording - iPhone 11 Pro - 2022-07-27 at 14.17.16.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Simulator Screen Recording - iPhone 11 Pro - 2022-07-27 at 14.17.16.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		3FAC2E7C286B438E00DFF069 /* Bulleyes */ = {
 			isa = PBXGroup;
 			children = (
+				3FDFAF7E2891B9360011F58C /* App Demo  */,
 				3F411AC9287CB3DB00B82292 /* Views */,
 				3F411AC8287CB3D400B82292 /* App */,
 				3F411AC7287CB3A700B82292 /* Models */,
@@ -173,6 +176,15 @@
 				3FAC2E9A286B439200DFF069 /* BulleyesUITestsLaunchTests.swift */,
 			);
 			path = BulleyesUITests;
+			sourceTree = "<group>";
+		};
+		3FDFAF7E2891B9360011F58C /* App Demo  */ = {
+			isa = PBXGroup;
+			children = (
+				3FDFAF802891B9630011F58C /* Simulator Screen Recording - iPhone 11 Pro - 2022-07-27 at 14.17.16.mp4 */,
+				3FDFAF7F2891B9630011F58C /* Simulator Screen Recording - iPhone 11 Pro - 2022-07-27 at 14.18.52.mp4 */,
+			);
+			path = "App Demo ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
