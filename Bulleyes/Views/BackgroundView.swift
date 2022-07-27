@@ -2,7 +2,7 @@
 //  BackgroundView.swift
 //  Bullseye
 //
-//  Created by Kim Kim h on July 18
+//  Created by Kim Kim on July 27
 //
 
 import SwiftUI
@@ -18,20 +18,31 @@ struct BackgroundView: View {
     }
     .padding()
     .background(
-      Color("BackgroundColor")
-        .edgesIgnoringSafeArea(.all)
+      RingsView()
     )
   }
 }
 
 struct TopView: View {
   @Binding var game: Game
-
+  @State private var leaderboardIsShowing = false
   var body: some View {
     HStack {
-      RoundedImageViewStroked(systemName: "arrow.counterclockwise")
+      Button(action: {
+        game.restart()
+      }) {
+       
+        RoundedImageViewStroked(systemName: "arrow.counterclockwise")
+      }
       Spacer()
-      RoundedImageViewFilled(systemName: "list.dash")
+        Button(action: {
+            leaderboardIsShowing = true
+        }) {
+            RoundedImageViewFilled(systemName: "list.dash")
+        }.sheet(isPresented: $leaderboardIsShowing,
+         onDismiss: {}, content: {
+         LeaderboardView(leaderboardIsShowing: $leaderboardIsShowing, game: $game)
+     })
     }
   }
 }
@@ -56,6 +67,24 @@ struct BottomView: View {
       NumberView(title: "Score", text: String(game.score))
       Spacer()
       NumberView(title: "Round", text: String(game.round))
+    }
+  }
+}
+
+struct RingsView: View {
+  var body: some View {
+    ZStack {
+      Color("BackgroundColor")
+        .edgesIgnoringSafeArea(.all)
+      ForEach(1..<6) { ring in
+        let size = CGFloat(ring * 100)
+        Circle()
+          .stroke(lineWidth: 20.0)
+          .fill(
+            RadialGradient(gradient: Gradient(colors: [Color("RingsColor").opacity(0.3 * 0.8), Color("RingsColor").opacity(0)]), center: .center, startRadius: 100, endRadius: 300)
+          )
+          .frame(width: size, height: size)
+      }
     }
   }
 }

@@ -19,6 +19,9 @@
 		3FAC2E8F286B439100DFF069 /* BulleyesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC2E8E286B439100DFF069 /* BulleyesTests.swift */; };
 		3FAC2E99286B439100DFF069 /* BulleyesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC2E98286B439100DFF069 /* BulleyesUITests.swift */; };
 		3FAC2E9B286B439200DFF069 /* BulleyesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC2E9A286B439200DFF069 /* BulleyesUITestsLaunchTests.swift */; };
+		3FCF8F3B288B082600B2FF2E /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF8F3A288B082600B2FF2E /* PointsView.swift */; };
+		3FCF8F3D288B42EF00B2FF2E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF8F3C288B42EE00B2FF2E /* Constants.swift */; };
+		3FCF8F3F288EE94A00B2FF2E /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF8F3E288EE94A00B2FF2E /* LeaderboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		3FAC2E94286B439100DFF069 /* BulleyesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BulleyesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAC2E98286B439100DFF069 /* BulleyesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulleyesUITests.swift; sourceTree = "<group>"; };
 		3FAC2E9A286B439200DFF069 /* BulleyesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulleyesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FCF8F3A288B082600B2FF2E /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
+		3FCF8F3C288B42EE00B2FF2E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3FCF8F3E288EE94A00B2FF2E /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				3F411ACA287CB91100B82292 /* Game.swift */,
+				3FCF8F3C288B42EE00B2FF2E /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +113,8 @@
 				3F3C3D6A2885B79800A4A36F /* Shapes.swift */,
 				3F3C3D6C2885BC2500A4A36F /* RoundViews.swift */,
 				3F3C3D6E2885E07600A4A36F /* BackgroundView.swift */,
+				3FCF8F3A288B082600B2FF2E /* PointsView.swift */,
+				3FCF8F3E288EE94A00B2FF2E /* LeaderboardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,11 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCF8F3F288EE94A00B2FF2E /* LeaderboardView.swift in Sources */,
 				3FAC2E80286B438E00DFF069 /* ContentView.swift in Sources */,
 				3F3C3D692880703800A4A36F /* TextViews.swift in Sources */,
 				3F3C3D6B2885B79800A4A36F /* Shapes.swift in Sources */,
+				3FCF8F3B288B082600B2FF2E /* PointsView.swift in Sources */,
 				3F3C3D6F2885E07600A4A36F /* BackgroundView.swift in Sources */,
 				3F411ACB287CB91100B82292 /* Game.swift in Sources */,
+				3FCF8F3D288B42EF00B2FF2E /* Constants.swift in Sources */,
 				3FAC2E7E286B438E00DFF069 /* BulleyesApp.swift in Sources */,
 				3F3C3D6D2885BC2500A4A36F /* RoundViews.swift in Sources */,
 			);
@@ -458,9 +470,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bulleyes/Preview Content\"";
+				DEVELOPMENT_TEAM = 5L67GNBD42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
@@ -476,6 +490,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kimkim.Bulleyes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -487,9 +502,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bulleyes/Preview Content\"";
+				DEVELOPMENT_TEAM = 5L67GNBD42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
@@ -505,6 +522,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kimkim.Bulleyes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
