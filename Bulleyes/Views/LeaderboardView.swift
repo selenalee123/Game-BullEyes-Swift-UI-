@@ -2,7 +2,7 @@
 //  LeaderboardView.swift
 //  Bullseye
 //
-//  Created by Kim Kim on July 27
+//  Created by Kim Kim on July 27 2022
 //
 
 import SwiftUI
